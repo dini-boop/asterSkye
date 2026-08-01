@@ -1,0 +1,193 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0d1117;
+}
+
+/* Navbar */
+.navbar{
+    background:#b11313 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link{
+    color:white !important;
+}
+
+/* Hero */
+.jumbotron{
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("img/spiderman.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#about{
+    background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+        url("img/new\ york.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.profile-header{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:70px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+.profile-text h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.profile-text p{
+    color:white;
+    font-size:24px;
+}
+section{
+    margin: 0;
+    padding: 0;
+}
+.jumbotron{
+    padding: 120px 0 80px;
+}
+
+#about{
+    padding: 80px 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+label,
+li,
+small {
+    color: white !important;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.hero-text span{
+    color:#d60000;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-top:20px;
+}
+
+.btn-red{
+    background:#d60000;
+    color:white;
+    padding:12px 35px;
+    text-decoration:none;
+    border-radius:10px;
+    display:inline-block;
+    margin-top:20px;
+}
+
+.btn-red:hover{
+    background:#900;
+    color:white;
+}
+
+/* Projects */
+
+#projects{
+    background:#10131d;
+    color:white;
+    padding:100px 0;
+}
+
+#projects h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.card{
+    background:#1c2331;
+    color:white;
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+footer{
+    background:#b11313;
+    color:white;
+    padding:20px;
+}
+.hero-text h1{
+    color: white !important;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero-text h3{
+    color: white !important;
+    font-size: 28px;
+}
+
+.hero-text p{
+    color: white !important;
+    font-size: 18px;
+}
+
+.hero-text span{
+    color: white !important; /* Kalau nama Dini ingin putih */
+}
+
+.btn-red{
+    background-color: #b11313;
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-red:hover{
+    background-color: #8b0000;
+}
+.about-desc{
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
