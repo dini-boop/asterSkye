@@ -1,0 +1,86 @@
+# Belajar Menggunakan Dataset Kaggle
+
+Dokumen ini menjelaskan langkah-langkah menggunakan dataset dari Kaggle dengan bahasa yang sederhana.
+
+```python
+import kagglehub
+
+# mendownload versi terbaru
+path = kagglehub.dataset_download("daffadwisulistiyo/minuman")
+
+# menunjukkan letak file
+print("Path to dataset files:", path)
+```
+
+```python
+import os
+
+os.listdir(path)
+```
+
+```python
+import pandas as pd
+
+minuman = pd.read_csv(path + "/minuman_ringan.csv")
+kategori = pd.read_csv(path + "/kategori_minuman.csv")
+```
+
+<!-- Read -->
+```python
+# CRUD(Read minuman)
+minuman
+```
+
+```python
+# CRUD(Read kategori)
+kategori
+```
+<!-- Batas Read -->
+
+<!-- Create -->
+```python
+# CRUD(Create kategori)
+kategori.loc[len(kategori)] = [11, "Es", "Minuman dingin"]
+
+kategori
+```
+
+```python
+# CRUD(Create minuman)
+minuman.loc[len(minuman)] = [11, "Jasjus", 2500, 50, 11]
+
+minuman
+```
+<!-- Batas Create -->
+
+<!-- Update -->
+```python
+# CRUD(Update data minuman)
+minuman.loc[minuman["nama_minuman"] == "Jasjus", "harga"] = 2000
+
+minuman
+```
+
+```python
+# CRUD(Update data kategori)
+kategori.loc[kategori["nama_kategori"] == "Es", "deskripsi"] = "Minuman Penyegar"
+
+kategori
+```
+<!-- Batas  Update -->
+
+<!-- Delete -->
+```python
+# CRUD(Delete data Jasjus di minuman)
+minuman = minuman[minuman["nama_minuman"] != "Jasjus"]
+
+minuman
+```
+
+```python
+# CRUD(Delete data Es di minuman)
+kategori = kategori[kategori["nama_kategori"] != "Es"]
+
+kategori
+```
+<!-- Batas Delete -->
